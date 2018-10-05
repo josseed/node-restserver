@@ -1,3 +1,7 @@
 install bcrypts: npm install --save bcryptjs && npm uninstall --save bcrypt
 
 start mongodb: "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
+
+heroku config:set VARIABLE="value"
+heroku config // listado variables
+heroku config:unset VARIABLE // delete variable

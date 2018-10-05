@@ -8,10 +8,25 @@ process.env.PORT = process.env.PORT || 3000;
 // ========================
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
+
+
+// ========================
+// Expiration
+// ========================
+// 60 seconds
+// 60 minutes
+// 24 hours
+// 30 days
+process.env.EXPIRATION_TOKEN = 60 * 60 * 24 * 30;
+
+// ========================
+// Seed Auth
+// ========================
+process.env.SEED = process.env.SEED || 'this-is-the-seed-development';
+
 // ========================
 // BD
 // ========================
-
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
