@@ -8,8 +8,6 @@ process.env.PORT = process.env.PORT || 3000;
 // ========================
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
-
-
 // ========================
 // Expiration
 // ========================
@@ -37,3 +35,9 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.URLDB = urlDB;
+
+// ========================
+// Google client ID
+// ========================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '428700664259-qvtequptc3e1g8q737prmhdcrc90j0kd.apps.googleusercontent.com';
