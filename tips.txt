@@ -5,3 +5,8 @@ start mongodb: "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:
 heroku config:set VARIABLE="value"
 heroku config // listado variables
 heroku config:unset VARIABLE // delete variable
+
+
+mongoose.set('useCreateIndex', true); // para depreciado
+
+mongoose.connect(process.env.URLDB, { useNewUrlParser: true }, (err, res) => { // para depreciado
